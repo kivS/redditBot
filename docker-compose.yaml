@@ -1,0 +1,9 @@
+version: '2'
+services:
+  myFeeder:
+    image: kivs/py-feeder
+    volumes:
+      - ./:/home/
+    restart: 'always'  
+    entrypoint: python myFeeder.py
+
