@@ -10,7 +10,7 @@ def start():
 	# subreddits wanted
 	forhire_url = 'https://www.reddit.com/r/forhire/new/.json'
 
-	forhire_feed_request = requests.get(forhire_url, headers={'User-Agent': 'myFeedbot 0.1 by /u/bit_nomad'})
+	forhire_feed_request = requests.get(forhire_url, headers={'User-Agent': 'myFeedbot 0.1 by /u/UserName'})
 
 	# get out if ship starts sinking..
 	if forhire_feed_request.status_code != 200: 
