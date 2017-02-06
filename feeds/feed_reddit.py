@@ -42,7 +42,6 @@ def start():
 		if(telegram_request.get('ok') == False):
 			logging.error(telegram_request)
 
-		#logging.debug(post['data'].get('title')+'-'+str(post['data'].get('created_utc')))
 		logging.debug('{}-{}'.format(post['data'].get('title'), post['data'].get('created_utc')))
 
 	#save time(now) into config file
